@@ -44,3 +44,28 @@ The Airbnb Clone Project is a full-stack web application designed to replicate A
             Fields: payment_id, booking_id, amount, status. 
             Relationships: A user can pay upfront. Only one user by virtue of booking can make a payment. 
             A user/booker can make multiple payments. 
+
+## Team Roles
+- **Backend Developer**: Handles server-side coding, API creation, and database connections for the app’s core features.
+- **Database Administrator**: Sets up and tunes the PostgreSQL database to store and retrieve data efficiently.
+- **DevOps Engineer**: Uses Docker to manage app containers and sets up automated deployment processes.
+- **Security Specialist**: Adds security layers to APIs, like user verification and data protection.
+- **Project Manager**: Keeps the team on track, assigns tasks, and ensures deadlines are met.
+
+## Feature Breakdown
+- **User Management**: Lets users sign up, log in, and edit their profiles securely.
+- **Property Management**: Owners list and manage properties; bookers browse and pick rentals.
+- **Booking System**: Users book properties for specific dates, with checks for availability.
+- **Payment Processing**: Handles secure payments for bookings, keeping transactions safe.
+- **Reviews and Ratings**: Bookers leave ratings and comments after stays to build trust.
+
+## API Security
+- **Authentication**: Uses tokens (JWT) to check user identity before granting API access.
+- **Authorization**: Limits what users can do based on their role, like owner or booker.
+- **Rate Limiting**: Caps API calls to stop overloads and keep the system running.
+- **Encryption**: Secures data with HTTPS and encrypts sensitive info like passwords.
+
+Security matters to keep user info safe, protect payments, and ensure the app stays reliable.
+
+## CI/CD Pipeline
+CI/CD automates testing and deploying code to make development smoother. **GitHub Actions** runs tests and pushes updates, while **Docker** keeps environments the same across dev and production. This cuts errors and speeds up releases.
